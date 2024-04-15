@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 
 const HomePage = () => {
@@ -7,7 +7,10 @@ const HomePage = () => {
   };
   return (
     <>
-      <button className="bg-slate-500 rounded-md text-white w-24 h-10" onClick={() => handleButton()}>
+      <button
+        className="bg-slate-500 rounded-md text-white w-24 h-10"
+        onClick={() => handleButton()}
+      >
         Click me
       </button>
       <ChildrenSeaction fullName="Tamaghna" lastName="Ghosh" />
@@ -15,6 +18,8 @@ const HomePage = () => {
 
       <Link href={"/login"}>Login</Link>
       <Link href={"/about"}>About</Link>
+      <Link href={"/studentlist"}>Studentlist</Link>
+      <Link href={"/study"}>Study</Link>
     </>
   );
 };
