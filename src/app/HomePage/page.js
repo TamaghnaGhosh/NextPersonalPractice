@@ -5,6 +5,15 @@ const HomePage = () => {
   const handleButton = () => {
     alert("handleButton");
   };
+
+  const arrayOfLinks = [
+    { link: "/login", elem: "Login" },
+    { link: "/about", elem: "About" },
+    { link: "/studentlist", elem: "Studentlist" },
+    { link: "/study", elem: "Study" },
+    { link: "/clientapiproductlist", elem: "Productlist-Client" },
+    { link: "/serverapiproductlist", elem: "Productlist-Server" },
+  ];
   return (
     <>
       <button
@@ -15,11 +24,11 @@ const HomePage = () => {
       </button>
       <ChildrenSeaction fullName="Tamaghna" lastName="Ghosh" />
       {/* {ChildrenSeaction({ fullName: "Tamaghna", lastName: "Ghosh" })} */}
-
-      <Link href={"/login"}>Login</Link>
-      <Link href={"/about"}>About</Link>
-      <Link href={"/studentlist"}>Studentlist</Link>
-      <Link href={"/study"}>Study</Link>
+      {arrayOfLinks.map((item) => (
+        <Link key={item} href={item.link}>
+          {item.elem}
+        </Link>
+      ))}
     </>
   );
 };
