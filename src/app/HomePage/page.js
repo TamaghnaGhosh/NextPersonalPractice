@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import SampleCss from "../SampleCss/page";
 
 const HomePage = () => {
   const handleButton = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
       >
         Click me
       </button>
+
       <ChildrenSeaction fullName="Tamaghna" lastName="Ghosh" />
       {/* {ChildrenSeaction({ fullName: "Tamaghna", lastName: "Ghosh" })} */}
       {arrayOfLinks.map((item) => (
@@ -29,6 +31,7 @@ const HomePage = () => {
           {item.elem}
         </Link>
       ))}
+      <SampleCss />
     </>
   );
 };
