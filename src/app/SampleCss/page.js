@@ -3,6 +3,13 @@ import Image from "next/image";
 import custom from "../custom.module.css";
 import customid from "../customId.module.css";
 import vercel from "../../../public/vercel.svg";
+// import { Roboto } from "next/font/google";
+
+// const roboto = Roboto({
+//   weight: "100px",
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
 const SampleCss = () => {
   const { main } = customid;
@@ -23,6 +30,7 @@ const SampleCss = () => {
         width={800}
         height={800}
       />
+      {/* <h1 className={roboto.className}>Font with Next js</h1> */}
       {/* <image src={vercel.src} /> */}
     </div>
   );
