@@ -16,6 +16,7 @@ const HomePage = () => {
     { link: "/serverapiproductlist", elem: "Productlist-Server" },
     { link: "/usermetadata", elem: "User-Metadata" },
     { link: "/uselocation", elem: "User-Location" },
+    { link: "/redirectpage", elem: "Redirect-page" },
   ];
   return (
     <>
