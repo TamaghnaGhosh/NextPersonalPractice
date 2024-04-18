@@ -14,6 +14,7 @@ const HomePage = () => {
     { link: "/study", elem: "Study" },
     { link: "/clientapiproductlist", elem: "Productlist-Client" },
     { link: "/serverapiproductlist", elem: "Productlist-Server" },
+    { link: "/usermetadata", elem: "User-Metadata" },
   ];
   return (
     <>
