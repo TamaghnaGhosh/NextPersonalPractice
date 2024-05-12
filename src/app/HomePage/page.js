@@ -30,7 +30,7 @@ const HomePage = () => {
       <ChildrenSeaction fullName="Tamaghna" lastName="Ghosh" />
       {/* {ChildrenSeaction({ fullName: "Tamaghna", lastName: "Ghosh" })} */}
       {arrayOfLinks.map((item) => (
-        <Link key={item} href={item.link}>
+        <Link key={item?.elem} href={item.link}>
           {item.elem}
         </Link>
       ))}
